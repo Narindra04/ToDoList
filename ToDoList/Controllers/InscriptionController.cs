@@ -20,6 +20,11 @@ namespace ToDoList.Controllers
         [HttpPost]
         public ActionResult Inscription(Utilisateur utilisateur)
         {
+            //Inscrire un utilisateur dans la DBConnexion
+            if (utilisateur.Nom_utilisateur != null)
+            {
+                DBConnexion.InscriptionUtilisateur(utilisateur);
+            }
             return RedirectToRoute("Home");
         }
     }

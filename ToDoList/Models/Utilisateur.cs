@@ -7,18 +7,18 @@ namespace ToDoList.Models
 {
     public class Utilisateur
     {
-        private int id_utilisateur;
-        private string nom_utilisateur;
-        private string email;
-        private string password;
-        private string comfirmpassword;
+        private int _id_inscription;
+        private string _nom_utilisateur;
+        private string _email;
+        private string _password;
+        private string _comfirmpassword;
 
         //getter and setter
-        public int Id_utilisateur { get => id_utilisateur; set => id_utilisateur = value; }
-        public string Nom_utilisateur { get => nom_utilisateur; set => nom_utilisateur = value; }
-        public string Email { get => email; set => email = value; }
-        public string Password { get => password; set => password = value; }
-        public string Comfirmpassword { get => comfirmpassword; set => comfirmpassword = value; }
+        public int Id_utilisateur { get => _id_inscription; set => _id_inscription = value; }
+        public string Nom_utilisateur { get => _nom_utilisateur; set => _nom_utilisateur = value; }
+        public string Email { get => _email; set => _email = value; }
+        public string Password { get => _password; set => _password = value; }
+        public string Comfirmpassword { get => _comfirmpassword; set => _comfirmpassword = value; }
 
 
         //constructeur avec id
@@ -40,10 +40,10 @@ namespace ToDoList.Models
         //constructeur sans id
         public Utilisateur(string nom_utilisateur, string email, string password, string comfirmpassword)
         {
-            this.nom_utilisateur = nom_utilisateur;
-            this.email = email;
-            this.password = password;
-            this.comfirmpassword = comfirmpassword;
+            this._nom_utilisateur = nom_utilisateur;
+            this._email = email;
+            this._password = password;
+            this._comfirmpassword = comfirmpassword;
         }
     }
 }
